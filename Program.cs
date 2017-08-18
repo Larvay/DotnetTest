@@ -15,6 +15,9 @@ namespace helloworld
             colors.ForEach(Console.WriteLine);
             Console.WriteLine(String.Join(",", colors));
             Console.WriteLine("Steve");
+
+            Func<int, int> addOne = x => x + 1; // this is the lambda expression
+            Console.WriteLine(addOne(4));
         }
     }
 }
